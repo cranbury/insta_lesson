@@ -1,0 +1,10 @@
+<h1>Insta</h1>
+
+<%= link_to "new post", new_post_path %>
+
+<% @posts.each do |post| %>
+  <div>
+    <%= image_tag post.pic, height: 200 %> 
+    <p><%= post.caption %></p>
+  </div>
+<% end %>
