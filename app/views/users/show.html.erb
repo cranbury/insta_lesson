@@ -1,0 +1,8 @@
+<h2><%= @user.email %></h2>
+
+<% @user.posts.each do |post| %>
+  <div>
+    <%= image_tag post.pic, height: 200 %> 
+    <p><%= post.caption %></p>
+  </div>
+<% end %>
